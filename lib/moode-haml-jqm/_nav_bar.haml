@@ -1,0 +1,5 @@
+%div(data-role="navbar")
+  %ul
+    - model.each do |m,p|
+      %li
+        =link_button :href => p[:href], :label => p[:name], :handle => p[:handle], :raw_property => p[:raw_property]
