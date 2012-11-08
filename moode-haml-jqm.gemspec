@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["tj19832@gmail.com"]
   gem.description   = %q{jquery mobile based haml component}
   gem.summary       = %q{jquery mobile based haml component}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/jtong/moode-haml-jqm"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
