@@ -1,11 +1,8 @@
 require "moode-haml-jqm/version"
+require "moode-haml-jqm/load_template"
 
 require 'haml'
 
-def load_component_template(component_name)
-  template_path = File.expand_path('../', __FILE__)
-  return File.read("#{template_path}/moode-haml-jqm/_#{component_name}.haml")
-end
 
 def link_button(args)
   template = load_component_template(:link_button)
