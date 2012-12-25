@@ -1,0 +1,15 @@
+%div.survey_type_select_container(data-role="fieldcontain")
+  %fieldset.survey_type_select_fieldset(data-role="controlgroup" data-type="horizontal" data-mini="true")
+    =input_radio_button :id => "#{for_survey}_yn_type", :name => "#{for_survey}_survey_type", :clazz => "survey_type", :value => "yn_type", :checked => "checked", :label => "Y/N调查"
+    =input_radio_button :id => "#{for_survey}_single_choice_type", :name => "#{for_survey}_survey_type", :clazz => "survey_type", :value => "single_choice_type", :label => "单选调查"
+    =input_radio_button :id => "#{for_survey}_notify_type", :name => "#{for_survey}_survey_type", :clazz => "survey_type", :value => "notify_type", :label => "Notify"
+.survey_appendix_container(style="display:none")
+  %ul.survey_appendix_list(data-role="listview" data-inset="true")
+    %li(data-role="fieldcontain")
+      =input_box :id => "#{for_survey}_appendix_a_choice", :name => "choice", :label => "A", :raw_property => "tag='a' data-mini='true'"
+    %li(data-role="fieldcontain")
+      =input_box :id => "#{for_survey}_appendix_b_choice", :name => "choice", :label => "B", :raw_property => "tag='b' data-mini='true'"
+    %li(data-role="fieldcontain")
+      =input_box :id => "#{for_survey}_appendix_c_choice", :name => "choice", :label => "C", :raw_property => "tag='c' data-mini='true'"
+    %li(data-role="fieldcontain")
+      =input_box :id => "#{for_survey}_appendix_d_choice", :name => "choice", :label => "D", :raw_property => "tag='d' data-mini='true'"
